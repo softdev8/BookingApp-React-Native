@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">976384665743-q7q33n2kbrbo5aj9tsq54cjhj7uko1vl.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://bargainbooks-2d7ff.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">976384665743</string>
+    <string name="google_api_key" translatable="false">AIzaSyAgcR1cO5Ott6d6egEkUUGRR2kyGUmNLDw</string>
+    <string name="google_app_id" translatable="false">1:976384665743:android:9626b304d659a9fa</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAgcR1cO5Ott6d6egEkUUGRR2kyGUmNLDw</string>
+    <string name="google_storage_bucket" translatable="false">bargainbooks-2d7ff.appspot.com</string>
+    <string name="project_id" translatable="false">bargainbooks-2d7ff</string>
+</resources>
