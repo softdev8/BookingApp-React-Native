@@ -7,6 +7,7 @@ const logger = createLogger({
     predicate: () => process.env.NODE_ENV === 'development'
 });
 
+//store set
 export default function configureStore() {
     const store = createStore(
         reducers,
