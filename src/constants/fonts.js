@@ -29,4 +29,5 @@ export default {
 	h3: { ...base, size: base.size * 1.25, lineHeight: lineHeight(base.size * 1.5) },
 	h4: { ...base, size: base.size * 1.1, lineHeight: lineHeight(base.size * 1.25) },
 	h5: { ...base },
+	h6: { ...base },
 };
