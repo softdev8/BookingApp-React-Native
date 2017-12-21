@@ -50,14 +50,12 @@ class StoreDetail extends Component {
 		)
 			.then(
 				function (response) {
-					console.log("=================Fetch User Ratings Success=================");
 					_this.props.fetchRatings(response.data);
 					_this.getRatingForStore(response.data);
 				}
 			)
 			.catch(
 				function (error) {
-					console.log("=================Fetch User Ratings FAILED=================");
           console.log(error.response);
 					_this.setState({loading: false});
           if (error.response.status === AppErrors.AUTH_FAILED) {
