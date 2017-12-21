@@ -22,8 +22,6 @@ const styles = StyleSheet.create({
 		flex: 1,
 		padding: 8
 	}
-
-
 });
 
 const mapStateToProps = (state) => {
