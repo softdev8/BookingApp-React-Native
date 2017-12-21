@@ -39,13 +39,11 @@ class FAQ extends Component {
 		)
 			.then(
 				function (response) {
-					console.log("=================Retrieve FAQs Success=================");
 					_this.setState({faqs:response.data, loading: false});
 				}
 			)
 			.catch(
 				function (error) {
-					console.log("=================Retrieve FAQs FAILED=================");
 					const response = error.response.data;
 					_this.setState({loading: false});
           if (error.response.status === AppErrors.AUTH_FAILED) {
