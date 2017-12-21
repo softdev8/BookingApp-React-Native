@@ -150,6 +150,7 @@ class AuthSignUp extends Component {
 	}
 
 	onCloseAlert(data) {
+		console.log("Alert", JSON.stringify(data));
 	}
 
 	renderSignUpButton() {
