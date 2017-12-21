@@ -46,8 +46,6 @@ class AuthResetPassword extends Component {
 			axios.post(AppConstants.BASE_URL + 'resetPassword', JSON.stringify({email}))
 				.then(
 					function (response) {
-						console.log("=================Reset Success=================");
-						console.log(JSON.stringify(response.data));
 						if (response.data == "No user found") {
 							_this.setState({buttonState: BTN_STATE.FAILED});
 						} else {
@@ -68,7 +66,6 @@ class AuthResetPassword extends Component {
 				)
 				.catch(
 					function (error) {
-						console.log("=================Reset FAILED=================");
 						_this.setState({buttonState: BTN_STATE.FAILED});
 						debugger;
 
