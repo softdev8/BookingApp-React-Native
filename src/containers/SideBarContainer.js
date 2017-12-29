@@ -5,7 +5,6 @@ import SideBar from '../components/SideBar';
 import {Actions} from 'react-native-router-flux';
 import {logOutUser, closeTab} from '../actions';
 
-
 class SideBarContainer extends Component {
   handleLogOut() {
 		AsyncStorage.multiRemove(
