@@ -25,7 +25,6 @@ class AuthenticationContainer extends Component {
 			currentPage: PAGE.LOGIN
 		}
 	}
-
 	// componentDidMount() {
 	// 	Linking.getInitialURL().then((url) => {
 	// 		if (url) {
