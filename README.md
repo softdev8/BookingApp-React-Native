@@ -103,4 +103,3 @@ The generated APK can be found under android/app/build/outputs/apk/app-release.a
 https://facebook.github.io/react-native/docs/signed-apk-android.html
 
 ###
-
