@@ -11,7 +11,6 @@ const store = configureStore();
 class App extends Component {
 	constructor() {
 		super();
-		// global.__DEV__ = false;
 	}
 
 	componentDidMount() {
