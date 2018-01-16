@@ -9,7 +9,6 @@ const constants = {
 	TWITTER : 'https://twitter.com/BargainBooksSA'
 };
 
-
 export default {
 	...constants
 };
