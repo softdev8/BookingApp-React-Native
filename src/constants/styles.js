@@ -244,5 +244,4 @@ export default {
 		// width: Sizes.screen.width * 0.8,
 		// height: Sizes.screen.width * 0.7,
 	},
-	
 };
