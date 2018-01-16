@@ -25,7 +25,7 @@ export default {
 	tabbarHeight: 51,
 
 	padding: 20,
-	paddingSml: 10,
+	paddingSml: 15,
 
 	borderRadius: 2,
 };
