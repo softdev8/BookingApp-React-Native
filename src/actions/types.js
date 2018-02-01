@@ -14,4 +14,4 @@ export const PROFILE_CHECKED = 'PROFILE_CHECKED';
 export const OPEN_TAB = 'OPEN_TAB';
 export const CLOSE_TAB = 'CLOSE_TAB';
 export const UPDATE_FILTER = 'UPDATE_FILTER';
-
+export const CHANGE_BOOK = 'CHANGE_BOOK';
