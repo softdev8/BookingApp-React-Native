@@ -61,6 +61,12 @@ export const changeBranch = (branch) => {
 	};
 };
 
+export const changeBook = (branch) => {
+	return (dispatch) => {
+		dispatch({type: CHANGE_BRANCH, payload: branch});
+	};
+};
+
 export const fetchStaticContent = (content) => {
 	return (dispatch) => {
 		dispatch({type: STATIC_CONTENT, payload: content});
