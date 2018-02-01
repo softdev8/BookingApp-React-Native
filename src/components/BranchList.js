@@ -128,6 +128,11 @@ const styles = StyleSheet.create({
 
 	commonText: {
 		color: AppColors.textSecondary,
+	},
+	
+	ButtonFlat: {
+		flex: 1,
+		color: AppColors.textSecondary,
 	}
 
 });
