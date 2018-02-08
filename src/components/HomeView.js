@@ -166,6 +166,20 @@ class HomeView extends Component
             );
     }
 
+    handleTwitterPress()
+    {
+        Linking.canOpenURL(AppConstants.TWITTER).then(supported =>
+        {
+            if (supported)
+            {
+                Linking.openURL(AppConstants.TWITTER);
+            } else
+            {
+                console.log("Don't know how to open URI: " + AppConstants.TWITTER);
+            }
+        });
+    }
+    
     handleFacebookPress()
     {
 
@@ -177,20 +191,6 @@ class HomeView extends Component
             } else
             {
                 console.log("Don't know how to open URI: " + AppConstants.FACEBOOK);
-            }
-        });
-    }
-
-    handleTwitterPress()
-    {
-        Linking.canOpenURL(AppConstants.TWITTER).then(supported =>
-        {
-            if (supported)
-            {
-                Linking.openURL(AppConstants.TWITTER);
-            } else
-            {
-                console.log("Don't know how to open URI: " + AppConstants.TWITTER);
             }
         });
     }
@@ -350,15 +350,15 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: AppColors.background
     },
+    buttonIcon: {
+        color: AppColors.base,
+        alignSelf: 'center'
+    },    
     title: {
         paddingVertical: 10,
         alignSelf: 'center',
         fontSize: 14,
         color: AppColors.base
-    },
-    buttonIcon: {
-        color: AppColors.base,
-        alignSelf: 'center'
     },
     mainButton: {
         flex: 1,
