@@ -275,17 +275,14 @@ const styles = StyleSheet.create({
 		fontSize: 16,
 		color: AppColors.textPrimary,
 	},
-
-	commonText: {
-		color: AppColors.textSecondary,
-		marginVertical: 2
-	},
-
 	description: {
 		color: AppColors.textSecondary,
 		fontSize: 12
 	},
-
+	commonText: {
+		color: AppColors.textSecondary,
+		marginVertical: 2
+	},
 	newsItem: {
 		justifyContent: 'center',
 		alignItems: 'center',
