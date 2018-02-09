@@ -136,6 +136,11 @@ const styles = StyleSheet.create({
 		textAlign: 'center'
 	},
 
+	bookName: {
+		fontSize: 16,
+		color: AppColors.textPrimary,
+	},
+
 	iconCommon: {
 		width: 18,
 		fontSize: 12,
@@ -146,11 +151,6 @@ const styles = StyleSheet.create({
 
 	orderContainer: {
 		flex: 1,
-	},
-
-	bookName: {
-		fontSize: 16,
-		color: AppColors.textPrimary,
 	},
 
 	commonText: {
