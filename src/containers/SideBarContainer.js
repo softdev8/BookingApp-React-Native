@@ -17,7 +17,7 @@ class SideBarContainer extends Component {
 	}
 
 	render() {
-    console.log('tab', this.props.tab);
+    		console.log('tab', this.props.tab);
 		return (
 			<SideBar {...this.props} onLogOut={this.handleLogOut.bind(this)}/>
 		);
