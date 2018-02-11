@@ -11,6 +11,18 @@ export default {
 		backgroundColor: '#000',
 	},
 
+	// Aligning items
+	leftAligned: {
+		alignItems: 'flex-start',
+	},
+	centerAligned: {
+		justifyContent: 'center',
+		alignItems: 'center',
+	},
+	rightAligned: {
+		alignItems: 'flex-end',
+	},
+	
 	// Default
 	container: {
 		position: 'relative',
@@ -30,18 +42,6 @@ export default {
 		flex: 1,
 		marginTop: Sizes.navbarHeight,
 		backgroundColor: Colors.background
-	},
-
-	// Aligning items
-	leftAligned: {
-		alignItems: 'flex-start',
-	},
-	centerAligned: {
-		justifyContent: 'center',
-		alignItems: 'center',
-	},
-	rightAligned: {
-		alignItems: 'flex-end',
 	},
 
 	// Text Styles
