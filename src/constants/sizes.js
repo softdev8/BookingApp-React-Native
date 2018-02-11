@@ -23,9 +23,8 @@ export default {
 	navbarHeight: (Platform.OS === 'ios') ? 64 : 54,
 	statusBarHeight: (Platform.OS === 'ios') ? 16 : 0,
 	tabbarHeight: 51,
-
+	borderRadius: 2,
 	padding: 20,
 	paddingSml: 15,
 
-	borderRadius: 2,
 };
