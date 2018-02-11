@@ -11,6 +11,13 @@ const app = {
 	listItemBackground: '#E9EBEE'
 };
 
+const text = {
+	textPrimary: '#222222',
+	textSecondary: '#777777',
+	headingPrimary: brand.brand.primary,
+	headingSecondary: brand.brand.primary
+};
+
 const brand = {
 	brand: {
 		primary: '#0E4EF8',
@@ -18,13 +25,6 @@ const brand = {
 		facebook: '#3b5998',
 		twitter: '#4099ff'
 	}
-};
-
-const text = {
-	textPrimary: '#222222',
-	textSecondary: '#777777',
-	headingPrimary: brand.brand.primary,
-	headingSecondary: brand.brand.primary
 };
 
 const borders = {
