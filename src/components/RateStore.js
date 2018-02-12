@@ -202,7 +202,12 @@ const styles = StyleSheet.create({
 		backgroundColor: AppColors.background
 	},
 
-	iconBig: {
+	
+
+	branchContainer: {
+		flex: 1,
+	},
+iconBig: {
 		width: 18,
 		fontSize: 14,
 		marginTop: 4,
@@ -217,11 +222,6 @@ const styles = StyleSheet.create({
 		color: AppColors.textSecondary,
 		textAlign: 'center'
 	},
-
-	branchContainer: {
-		flex: 1,
-	},
-
 	branchName: {
 		fontSize: 16,
 		color: AppColors.textPrimary,
