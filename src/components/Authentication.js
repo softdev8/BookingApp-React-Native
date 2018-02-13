@@ -40,11 +40,7 @@ class Authentication extends Component {
 
 	}
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.should === 'logout') {
-      console.log('componentWillReceiveProps', 'should', nextProps.should);
-    }
-  }
+
 
   componentDidMount() {
     if (this.props.redirect) {
@@ -69,6 +65,12 @@ class Authentication extends Component {
 		}).catch(err => console.error('An error occurred', err));
 	}
 
+	componentWillReceiveProps(nextProps) {
+    		if (nextProps.should === 'logout') {
+      			console.log('componentWillReceiveProps', 'should', nextProps.should);
+    		}
+  	}
+	
 	checkLoginFields() {
 		const {email, password} = this.state;
 		
@@ -486,6 +488,13 @@ const styles = StyleSheet.create({
 		flex: 1,
 		backgroundColor: 'rgba(0,0,0,0)'
 	},
+	errorMessage: {
+		color: 'red',
+		backgroundColor: '#fff',
+		alignSelf: 'stretch',
+		paddingLeft: 20,
+		paddingVertical: 10
+	},
 	title: {
 		marginTop: 40,
 		marginBottom: 30,
@@ -493,13 +502,6 @@ const styles = StyleSheet.create({
 		fontSize: 20,
 		fontWeight: '500',
 		color: '#fff'
-	},
-	errorMessage: {
-		color: 'red',
-		backgroundColor: '#fff',
-		alignSelf: 'stretch',
-		paddingLeft: 20,
-		paddingVertical: 10
 	},
 	containerStyle: {
 		backgroundColor: 'rgba(255,255,255,0)',
