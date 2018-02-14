@@ -82,7 +82,18 @@ class AuthenticationContainer extends Component {
 						onChangePage={this.setActivePage.bind(this)}
 					/>
 				</Modal>
-
+				<Modal
+					animationType={"fade"}
+					transparent={true}
+					visible={this.state.currentPage == PAGE.TERMS_USE}
+					onRequestClose={() => {console.log("Modal has been closed.")}}
+				>
+					<AuthTermsUSe
+						{...this.props}
+						onResetPress={this.handleResetPress.bind(this)}
+						onChangePage={this.setActivePage.bind(this)}
+					/>
+				</Modal>
 				<Modal
 					animationType={"fade"}
 					transparent={true}
@@ -96,18 +107,7 @@ class AuthenticationContainer extends Component {
 					/>
 				</Modal>
 
-				<Modal
-					animationType={"fade"}
-					transparent={true}
-					visible={this.state.currentPage == PAGE.TERMS_USE}
-					onRequestClose={() => {console.log("Modal has been closed.")}}
-				>
-					<AuthTermsUSe
-						{...this.props}
-						onResetPress={this.handleResetPress.bind(this)}
-						onChangePage={this.setActivePage.bind(this)}
-					/>
-				</Modal>
+				
 
 			</View>
 		);
