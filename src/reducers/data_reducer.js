@@ -17,11 +17,6 @@ const INITIAL_STATE = {
 	officeInformation: '',
 	temrsAndConditions: '',
 	aboutUs: '',
-	termsOfUse: '',
-	privacyPolicy: '',
-	mandate: '',
-	lastSceneKey: '',
-	profileChecked: false,
 	searchFilters: {
 		Region: {
 			EAST: false,
@@ -30,6 +25,12 @@ const INITIAL_STATE = {
 			SOUTH: false,
 			CENTRAL: false,
 	  },
+	termsOfUse: '',
+	privacyPolicy: '',
+	mandate: '',
+	lastSceneKey: '',
+	profileChecked: false,
+	
     City: {},
     Province: {},
   },
