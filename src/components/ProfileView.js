@@ -1123,14 +1123,6 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         color: 'white'
     },
-
-    dropdownStyle: {
-        borderColor: AppColors.colorPrimary,
-        borderWidth: 2,
-        borderRadius: 10,
-        height: 124
-    },
-
     dropdownRow: {
         flexDirection: 'row',
         height: 40,
@@ -1146,6 +1138,15 @@ const styles = StyleSheet.create({
         color: AppColors.colorSecondary,
         textAlignVertical: 'center'
     }
+
+    dropdownStyle: {
+        borderColor: AppColors.colorPrimary,
+        borderWidth: 2,
+        borderRadius: 10,
+        height: 124
+    },
+
+    
 });
 
 const mapStateToProps = (state) =>
