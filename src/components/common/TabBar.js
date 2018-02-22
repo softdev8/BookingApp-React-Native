@@ -27,20 +27,20 @@ class TabBar extends Component {
 		}
 
 		switch (key) {
+			case "aboutUs":
+				// Actions.aboutUs({ type: replace ? ActionConst.REPLACE : ActionConst.PUSH});
+				Actions.aboutUs();
+				break;
+			case "eventsView":
+				// Actions.eventsView({ type: replace ? ActionConst.REPLACE : ActionConst.PUSH});
+				Actions.eventsView();
+				break;
 			case "storeLocator":
 				// Actions.storeLocator({ type: replace ? ActionConst.REPLACE : ActionConst.PUSH});
 				Actions.storeLocator();
 				break;
 
-			case "aboutUs":
-				// Actions.aboutUs({ type: replace ? ActionConst.REPLACE : ActionConst.PUSH});
-				Actions.aboutUs();
-				break;
-
-			case "eventsView":
-				// Actions.eventsView({ type: replace ? ActionConst.REPLACE : ActionConst.PUSH});
-				Actions.eventsView();
-				break;
+			
 
 			default:
 				break;
@@ -90,17 +90,17 @@ const styles = StyleSheet.create({
 		shadowRadius: 5,
 		paddingHorizontal: 2
 	},
-
+	sideBarItemContainer: {
+		flex: 1,
+		flexDirection: 'column',
+		justifyContent: 'center',
+	},
 	sideBarItemTitle: {
 		color: 'white',
 		fontSize: 12,
 		textAlign: 'center'
 	},
-	sideBarItemContainer: {
-		flex: 1,
-		flexDirection: 'column',
-		justifyContent: 'center',
-	}
+	
 });
 
 const mapStateToProps = (state) => {
