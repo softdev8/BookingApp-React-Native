@@ -46,7 +46,12 @@ const styles = StyleSheet.create({
       }
     })
   },
-
+iconStyle: {
+    color: 'white',
+    paddingLeft: 10,
+    fontSize: 38,
+    width: iconWidth
+  }
   navTitle: {
     flex: 1,
     marginRight: iconWidth,
@@ -55,12 +60,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
 
-  iconStyle: {
-    color: 'white',
-    paddingLeft: 10,
-    fontSize: 38,
-    width: iconWidth
-  }
+  
 
 });
 
