@@ -127,15 +127,17 @@ class NewsDetailView extends Component {
 
     if (!newsDetail) return null;
 
-    // Linking.canOpenURL(newsDetail).then(supported => {
-    //   if (supported) {
-    //     Linking.openURL(newsDetail);
-    //     Actions.pop();
-    //   } else {
-    //     Alert.alert( 'Failed to open URI', `Don't know how to open URI: ${newsDetail}`, [ {text: 'OK', onPress: () => console.log('OK Pressed')} ] );
-    //   }
-    // });
-    // return null;
+	  // Marked by mobile
+    Linking.canOpenURL(newsDetail).then(supported => {
+      if (supported) {
+        Linking.openURL(newsDetail);
+        Actions.pop();
+      } else {
+        Alert.alert( 'Failed to open URI', `Don't know how to open URI: ${newsDetail}`, [ {text: 'OK', onPress: () => console.log('OK Pressed')} ] );
+      }
+    });
+    return null;
+	  //
 	
     return (
 			<View style={styles.newsContainer}>
@@ -169,17 +171,15 @@ class NewsDetailView extends Component {
 
 const styles = StyleSheet.create({
 
-	container: {
+	textContainer: {
+		flex: 1,
+		padding: 8
+	},container: {
 		flex: 1,
 	},
 
 	newsContainer: {
 		flex: 1
-	},
-
-	textContainer: {
-		flex: 1,
-		padding: 8
 	},
 	webContainer: {
 		flex: 1,
