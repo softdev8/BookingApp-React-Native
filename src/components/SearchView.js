@@ -324,14 +324,6 @@ const styles = StyleSheet.create({
 		flex: 1,
 		paddingRight: 24
 	},
-	iconBig: {
-		width: 18,
-		fontSize: 14,
-		marginTop: 4,
-		color: AppColors.textSecondary,
-		textAlign: 'center'
-	},
-
 	iconCommon: {
 		width: 18,
 		fontSize: 12,
@@ -344,7 +336,13 @@ const styles = StyleSheet.create({
 		fontSize: 16,
 		color: AppColors.textPrimary,
 	},
-
+	iconBig: {
+		width: 18,
+		fontSize: 14,
+		marginTop: 4,
+		color: AppColors.textSecondary,
+		textAlign: 'center'
+	},
 	commonText: {
 		color: AppColors.textSecondary,
 	}
