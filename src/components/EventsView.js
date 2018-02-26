@@ -360,17 +360,6 @@ const styles = StyleSheet.create({
 		textAlign: 'center'
 	},
 
-	newsContainer: {
-		borderColor: AppColors.listItemBackground,
-		borderBottomWidth: 1
-	},
-
-	newsRow: {
-		padding: 4,
-		flex: 1
-	},
-
-
 	newsTitle: {
 		fontSize: 16,
 		color: AppColors.textPrimary,
@@ -379,6 +368,14 @@ const styles = StyleSheet.create({
 	commonText: {
 		color: AppColors.textSecondary,
 		marginVertical: 2
+	},newsContainer: {
+		borderColor: AppColors.listItemBackground,
+		borderBottomWidth: 1
+	},
+
+	newsRow: {
+		padding: 4,
+		flex: 1
 	},
 
 	description: {
