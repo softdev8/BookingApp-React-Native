@@ -18,6 +18,10 @@ export default class BurgerIcon extends Component {
 }
 
 const styles = StyleSheet.create({
+    burgerIcon: {
+        fontSize: 22,
+        color: '#FFF',
+    },
     burgerButton: {
         width: 100,
         height: 37,
@@ -25,9 +29,5 @@ const styles = StyleSheet.create({
         bottom: 4,
         left: 2,
         padding: 8,
-    },
-    burgerIcon: {
-        fontSize: 22,
-        color: '#FFF',
-    },
+    }
 });
