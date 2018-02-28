@@ -265,15 +265,6 @@ const styles = StyleSheet.create({
 		paddingHorizontal: 10
 	},
 
-	textInputWrapper: {
-		minHeight: 50,
-		borderColor: AppColors.colorPrimary,
-		borderWidth: 1,
-		padding: 4,
-		borderRadius: 4,
-		marginTop: 5
-	},
-
 	textInput: {
 		color: AppColors.textPrimary,
 		height: 42
@@ -282,6 +273,15 @@ const styles = StyleSheet.create({
 	rateButton: {
 		width: 150,
 
+	},
+
+	textInputWrapper: {
+		minHeight: 50,
+		borderColor: AppColors.colorPrimary,
+		borderWidth: 1,
+		padding: 4,
+		borderRadius: 4,
+		marginTop: 5
 	}
 });
 
