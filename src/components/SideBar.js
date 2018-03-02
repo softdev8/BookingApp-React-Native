@@ -108,8 +108,7 @@ class NavigationDrawer extends Component {
 
   handleNotification(notif)
   {
-    
-console.log('XXXxXXXXxxxxxxxxxxXXXxXXXXxxxxxxxxxxXXXxXXXXxxxxxxxxxxXXXxXXXXxxxxxxxxxx');
+	  console.log('XXXxXXXXxxxxxxxxxxXXXxXXXXxxxxxxxxxxXXXxXXXXxxxxxxxxxxXXXxXXXXxxxxxxxxxx');
       if (notif == null || notif.length == 0) 
         {
           console.log('handleNotification: notif is blank');
@@ -197,13 +196,13 @@ console.log('XXXxXXXXxxxxxxxxxxXXXxXXXXxxxxxxxxxxXXXxXXXXxxxxxxxxxxXXXxXXXXxxxxx
         this.setState({ openedModal: modalName });
         break;
 
-      case "mapView":
-        this.refs.mapView.open();
+      case "notificationModal":
+        this.refs.notifModal.open();
         this.setState({ openedModal: modalName });
         break;
 
-      case "notificationModal":
-        this.refs.notifModal.open();
+      case "mapView":
+        this.refs.mapView.open();
         this.setState({ openedModal: modalName });
         break;
 
