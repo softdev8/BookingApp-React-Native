@@ -25,13 +25,15 @@ class AuthenticationContainer extends Component {
 			currentPage: PAGE.LOGIN
 		}
 	}
-	// componentDidMount() {
-	// 	Linking.getInitialURL().then((url) => {
-	// 		if (url) {
-	// 			console.log('Initial url is: ' + url);
-	// 		}
-	// 	}).catch(err => console.error('An error occurred', err));
-	// }
+	/* fixed mobiledev418
+	componentDidMount() {
+		Linking.getInitialURL().then((url) => {
+			if (url) {
+				console.log('Initial url is: ' + url);
+			}
+		}).catch(err => console.error('An error occurred', err));
+	}
+	*/
 
 	setActivePage(index) {
 		this.setState({currentPage: index});
