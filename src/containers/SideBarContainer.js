@@ -5,6 +5,7 @@ import SideBar from '../components/SideBar';
 import {Actions} from 'react-native-router-flux';
 import {logOutUser, closeTab} from '../actions';
 
+
 class SideBarContainer extends Component {
   handleLogOut() {
 		AsyncStorage.multiRemove(
@@ -32,5 +33,6 @@ const mapStateToProps = (state) => {
     tab: state.routes.tab,
 	};
 };
+
 
 export default connect(mapStateToProps, {logOutUser, closeTab})(SideBarContainer);
