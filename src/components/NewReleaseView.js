@@ -34,6 +34,7 @@ class NewReleaseView extends Component {
   };
 
   componentWillMount() {
+	  console.log("NewRelease View");
     Actions.refresh({ renderRightButton: this.renderRightButton });
   }
 
@@ -286,10 +287,10 @@ const styles = StyleSheet.create({
 		color: AppColors.textSecondary,
 	},
 
-  rightButton: {
-    fontSize: 22,
-    color: 'white',
-  },
+  	rightButton: {
+    		fontSize: 22,
+    		color: 'white',
+  	},
 });
 
 const mapStateToProps = (state) => {
