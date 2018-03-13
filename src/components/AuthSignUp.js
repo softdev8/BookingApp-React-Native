@@ -148,7 +148,7 @@ class AuthSignUp extends Component {
 
 		return true;
 	}
-
+	// Close Alert exchange
 	onCloseAlert(data) {
 		console.log("Alert", JSON.stringify(data));
 	}
