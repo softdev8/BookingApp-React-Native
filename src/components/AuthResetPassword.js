@@ -28,9 +28,9 @@ class AuthResetPassword extends Component {
 		this.handleResetPassword = this.handleResetPassword.bind(this);
 	}
 
-	onBack() {
-		this.props.onChangePage(1);
-	}
+// 	onBack() {
+// 		this.props.onChangePage(1);
+// 	}
 
 	handleResetPassword() {
 		const {email} = this.state;
