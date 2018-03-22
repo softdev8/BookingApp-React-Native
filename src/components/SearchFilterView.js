@@ -183,6 +183,11 @@ const styles = StyleSheet.create({
     padding: 8,
     backgroundColor: AppColors.background
   },
+
+  questionsContainer: {
+    marginVertical: 10
+  },
+
   title: {
     paddingVertical: 10,
     fontSize: 20,
@@ -195,11 +200,6 @@ const styles = StyleSheet.create({
     color: AppColors.colorPrimary,
     textAlign: 'center'
   },
-
-  questionsContainer: {
-    marginVertical: 10
-  },
-
   questionWrapper: {
     paddingBottom: 20
   },
