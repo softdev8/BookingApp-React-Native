@@ -348,6 +348,11 @@ class StoreLocatorView extends Component {
 
 const styles = StyleSheet.create({
 
+	
+
+	container: {
+		flex: 1,
+	},
 	navHeader: {
 		height: AppSizes.navbarHeight,
 		backgroundColor: AppColors.base,
@@ -363,11 +368,6 @@ const styles = StyleSheet.create({
 			}
 		})
 	},
-
-	container: {
-		flex: 1,
-	},
-	
 	iconBig: {
 		width: 18,
 		fontSize: 14,
