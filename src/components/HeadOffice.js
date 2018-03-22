@@ -16,20 +16,17 @@ class HeadOffice extends Component {
 	}
 }
 
-const styles = StyleSheet.create({
-
-	container: {
-		flex: 1,
-		padding: 8
-	}
-
-
-});
-
 const mapStateToProps = (state) => {
 	return {
 		officeInformation: state.data.officeInformation,
 	};
 };
+
+const styles = StyleSheet.create({
+	container: {
+		flex: 1,
+		padding: 8
+	}
+});
 
 export default connect(mapStateToProps, {})(HeadOffice);
