@@ -51,8 +51,6 @@ class StoreLocationMap extends Component {
         </View>
       );
     }
-
-
   }
 }
 
