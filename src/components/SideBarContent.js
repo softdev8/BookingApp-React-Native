@@ -130,12 +130,6 @@ const styles = StyleSheet.create({
 		paddingBottom: 20,
 		paddingHorizontal: 10
 	},
-	sideBarItemTitle: {
-		color: 'white',
-		marginLeft: 10,
-		paddingTop: 2,
-		fontSize: 18
-	},
 	sideBarItemContainer: {
 		flexDirection: 'row',
 		marginVertical: 5
@@ -144,6 +138,12 @@ const styles = StyleSheet.create({
 		height: 1,
 		backgroundColor: 'rgba(255,255,255,0.5)',
 		marginVertical: 10
+	},
+	sideBarItemTitle: {
+		color: 'white',
+		marginLeft: 10,
+		paddingTop: 2,
+		fontSize: 18
 	}
 });
 
