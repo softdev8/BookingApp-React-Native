@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import {View, ScrollView, WebView, Text, StyleSheet} from 'react-native';
-import {OpaqueCard} from './common';
 import MaterialsIcon from 'react-native-vector-icons/MaterialIcons';
 import {AppColors, AppFonts, AppStyles, AppSizes} from '../constants';
+import {View, ScrollView, WebView, Text, StyleSheet} from 'react-native';
+import {OpaqueCard} from './common';
 import AwesomeButton from '../libs/AwesomeButton';
 
 const termsContent = require('../assets/TermsOfUse.html');
@@ -72,15 +72,6 @@ const styles = StyleSheet.create({
 	loginContainer: {
 		flex: 1
 	},
-	title: {
-		flex: 1,
-		alignSelf: 'center',
-		textAlign: 'center',
-		fontSize: 20,
-		marginRight: 24,
-		fontWeight: '500',
-		color: '#fff'
-	},
 	containerStyle: {
 		backgroundColor: 'rgba(255, 255, 255, 0.3)',
 		borderRadius: 4,
@@ -89,6 +80,15 @@ const styles = StyleSheet.create({
 		marginHorizontal: 10,
 		width: AppSizes.screen.width - 20,
 		height: AppSizes.screen.height - 120
+	},
+	title: {
+		flex: 1,
+		alignSelf: 'center',
+		textAlign: 'center',
+		fontSize: 20,
+		marginRight: 24,
+		fontWeight: '500',
+		color: '#fff'
 	}
 });
 
