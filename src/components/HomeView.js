@@ -137,13 +137,6 @@ class HomeView extends Component
 
                 setTimeout(() =>
                 {
-                    //console.log(_this.props.profile);
-
-                    //if (!_this.props.profile.IsProfileComplete && !_this.props.profileChecked)
-                    //{
-                    //    Actions.profileView();
-                    //    _this.props.alreadyCheckedProfile(true);
-                    //}
                     if (!_this.props.profile.IsProfileComplete)
                     {
                         Actions.profileView();
@@ -353,12 +346,6 @@ const styles = StyleSheet.create({
     buttonIcon: {
         color: AppColors.base,
         alignSelf: 'center'
-    },    
-    title: {
-        paddingVertical: 10,
-        alignSelf: 'center',
-        fontSize: 14,
-        color: AppColors.base
     },
     mainButton: {
         flex: 1,
@@ -374,6 +361,12 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.2,
         shadowRadius: 1,
         elevation: 2
+    },    
+    title: {
+        paddingVertical: 10,
+        alignSelf: 'center',
+        fontSize: 14,
+        color: AppColors.base
     }
 
 });
