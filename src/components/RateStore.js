@@ -9,6 +9,7 @@ import axios from 'axios';
 import {connect} from 'react-redux';
 import SearchBar from 'react-native-searchbar'
 
+
 class RateStore extends Component {
 	constructor(props) {
 		super(props);
