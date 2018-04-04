@@ -125,7 +125,6 @@ class NewsView extends Component {
       .then(
         function (response) {
           debugger;
-          console.log(`=================Read News - ${news[newsIndex].Id} Success=================`);
           let updatedNews = news.map(item => {
             if (item.Id === news[newsIndex].Id) {
               item.HasRead = true;
@@ -137,7 +136,6 @@ class NewsView extends Component {
       )
       .catch(
         function (error) {
-          console.log("=================Read News FAILED=================");
           console.log(error.response);
           if (error.response.status === AppErrors.AUTH_FAILED) {
             Actions.auth({ redirect: 'newsFeedView' });
@@ -253,15 +251,6 @@ class NewsView extends Component {
 
 const styles = StyleSheet.create({
 
-	container: {
-		flex: 1,
-		padding: 4
-	},
-
-	newsContainer: {
-		borderColor: AppColors.listItemBackground,
-	},
-
 	newsRow: {
 		marginVertical: 4,
 	},
@@ -271,6 +260,14 @@ const styles = StyleSheet.create({
 		fontWeight: 'bold'
 	},
 
+	container: {
+		flex: 1,
+		padding: 4
+	},
+
+	newsContainer: {
+		borderColor: AppColors.listItemBackground,
+	},
 	newsTitle: {
 		fontSize: 16,
 		color: AppColors.textPrimary,
