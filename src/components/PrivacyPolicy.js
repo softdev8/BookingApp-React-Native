@@ -24,10 +24,13 @@ const styles = StyleSheet.create({
 	}
 });
 
+
 const mapStateToProps = (state) => {
 	return {
 		privacyPolicy: state.data.privacyPolicy
 	};
 };
 
+
 export default connect(mapStateToProps, {})(PrivacyPolicy);
+
