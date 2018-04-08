@@ -123,11 +123,6 @@ class OrderList extends Component {
 }
 
 const styles = StyleSheet.create({
-
-	listContainer: {
-		flex: 1
-	},
-
 	iconBig: {
 		width: 18,
 		fontSize: 14,
@@ -135,12 +130,13 @@ const styles = StyleSheet.create({
 		color: AppColors.textSecondary,
 		textAlign: 'center'
 	},
-
 	bookName: {
 		fontSize: 16,
 		color: AppColors.textPrimary,
 	},
-
+	listContainer: {
+		flex: 1
+	},
 	iconCommon: {
 		width: 18,
 		fontSize: 12,
@@ -148,11 +144,9 @@ const styles = StyleSheet.create({
 		color: AppColors.textSecondary,
 		textAlign: 'center'
 	},
-
 	orderContainer: {
 		flex: 1,
 	},
-
 	commonText: {
 		color: AppColors.textSecondary,
 	}
