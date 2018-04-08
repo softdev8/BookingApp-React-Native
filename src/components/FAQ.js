@@ -23,6 +23,20 @@ class FAQ extends Component {
 	componentDidMount() {
 		this.retrieveFaq();
 	}
+	
+	renderQuestion(section, index, isActive) {
+		return (
+			<Animatable.View
+				duration={300}
+				transition="backgroundColor"
+				style={[styles.header,
+				{ backgroundColor: (isActive ? 'rgba(255,255,255,1)' : 'rgba(255,255,255,1)'), borderBottomWidth: (isActive ? 0 : 1) }]}>
+				<Text style={{color: isActive ? AppColors.base : AppColors.textPrimary}}>
+					{section.Question}
+				</Text>
+			</Animatable.View>
+		)
+	}
 
 	retrieveFaq() {
 		let _this = this;
@@ -54,20 +68,6 @@ class FAQ extends Component {
 					}, 200);
 				}
 			);
-	}
-
-	renderQuestion(section, index, isActive) {
-		return (
-			<Animatable.View
-				duration={300}
-				transition="backgroundColor"
-				style={[styles.header,
-				{ backgroundColor: (isActive ? 'rgba(255,255,255,1)' : 'rgba(255,255,255,1)'), borderBottomWidth: (isActive ? 0 : 1) }]}>
-				<Text style={{color: isActive ? AppColors.base : AppColors.textPrimary}}>
-					{section.Question}
-				</Text>
-			</Animatable.View>
-		)
 	}
 
 	renderAnswer(section, index, isActive) {
@@ -104,23 +104,20 @@ class FAQ extends Component {
 }
 
 const styles = StyleSheet.create({
-	container: {
-		flex: 1
-	},
-
 	header: {
 		padding: 8,
 		borderColor: AppColors.listItemBackground,
 		height: 60,
 		justifyContent: 'center'
 	},
-
 	content: {
 		paddingLeft: 20,
 		paddingRight: 8,
 		paddingVertical: 8
 	},
-
+	container: {
+		flex: 1
+	},
 	contentText: {
 		color: AppColors.colorPrimary
 	}
