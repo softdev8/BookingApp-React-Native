@@ -108,54 +108,53 @@ class NavigationDrawer extends Component {
 
   handleNotification(notif)
   {
-	  console.log('XXXxXXXXxxxxxxxxxxXXXxXXXXxxxxxxxxxxXXXxXXXXxxxxxxxxxxXXXxXXXXxxxxxxxxxx');
-      if (notif == null || notif.length == 0) 
+	console.log('XXXxXXXXxxxxxxxxxxXXXxXXXXxxxxxxxxxxXXXxXXXXxxxxxxxxxxXXXxXXXXxxxxxxxxxx');
+      	if (notif == null || notif.length == 0) 
         {
-          console.log('handleNotification: notif is blank');
-          return;
+          	console.log('handleNotification: notif is blank');
+          	return;
         }
-    const knownItemTypes = ['Event', 'News', 'NewRelease', 'Order'];
-    const itemType = notif.itemType || '';
-    const itemId = notif.itemId || '';        
-    if (itemType === '') {
-      return;
-    }
-    //  if(notif.itemType === 'Order'){
-    //       Actions.orderList();
-    //     }
-    //     if (notif.itemType === 'News'){
-    //        Actions.newsFeedView({ notificationItemId: notif.itemId });
-    //     }
-    //     if (notif.itemType === 'Event') {
-    //       Actions.eventsView({ notificationItemId: notif.itemId });
-    //     }
-    if (itemType === '' || knownItemTypes.indexOf(itemType) === -1) {
-      this.setState({
-        notif: {
-          type: 'warning',
-          title: 'Invalid Item Type',
-          message: itemType,
+    	const knownItemTypes = ['Event', 'News', 'NewRelease', 'Order'];
+    	const itemType = notif.itemType || '';
+    	const itemId = notif.itemId || '';        
+    	if (itemType === '') {
+      		return;
+    	}
+    	 if(notif.itemType === 'Order'){
+          	Actions.orderList();
         }
-      });
-    } else {
-      const title = notif.title;
-      const alertTitle = `${title}`;
-      const message =notif.message;
+        if (notif.itemType === 'News'){
+           	Actions.newsFeedView({ notificationItemId: notif.itemId });
+        }
+        if (notif.itemType === 'Event') {
+          	Actions.eventsView({ notificationItemId: notif.itemId });
+        }
+    	if (itemType === '' || knownItemTypes.indexOf(itemType) === -1) {
+      		this.setState({
+        		notif: {
+          			type: 'warning',
+          			title: 'Invalid Item Type',
+          			message: itemType,
+        		}
+      		});
+    	} else {
+      		const title = notif.title;
+      		const alertTitle = `${title}`;
+      		const message =notif.message;
 
-      this.setState({
-        notif: {
-          type: 'info',
-          title: alertTitle,
-          message,
-          itemType,
-          itemId,
-        }
-      });
+      		this.setState({
+        	notif: {
+          		type: 'info',
+          		title: alertTitle,
+          		message,
+          		itemType,
+          		itemId,
+        	}
+      	});
     }
-
-		// this.onShowAlertWithType(notif.type, notif.title, notif.message);
-    //this.openModal('notificationModal');
-    this.refs.notifModal.open();
+	// this.onShowAlertWithType(notif.type, notif.title, notif.message);
+    	//this.openModal('notificationModal');
+    	this.refs.notifModal.open();
   }
 
 
