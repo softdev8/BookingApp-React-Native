@@ -116,11 +116,6 @@ const styles = StyleSheet.create({
 		color: AppColors.textSecondary,
 		textAlign: 'center'
 	},
-
-	branchContainer: {
-		flex: 1,
-	},
-
 	branchName: {
 		fontSize: 16,
 		color: AppColors.textPrimary,
@@ -133,7 +128,13 @@ const styles = StyleSheet.create({
 	ButtonFlat: {
 		flex: 1,
 		color: AppColors.textSecondary,
-	}
+	},
+
+	branchContainer: {
+		flex: 1,
+	},
+
+	
 
 });
 
