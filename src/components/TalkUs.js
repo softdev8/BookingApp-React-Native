@@ -66,13 +66,11 @@ class TalkUs extends Component {
 		)
 			.then(
 				function (response) {
-					console.log("=================Retrieve Titles Success=================");
 					_this.setState({titles:response.data, loading: false});
 				}
 			)
 			.catch(
 				function (error) {
-					console.log("=================Retrieve Titles FAILED=================");
 					const response = error.response.data;
 					_this.setState({loading: false});
           if (error.response.status === AppErrors.AUTH_FAILED) {
@@ -144,14 +142,6 @@ const styles = StyleSheet.create({
 		padding: 8
 	},
 
-	iconBig: {
-		width: 18,
-		fontSize: 14,
-		marginTop: 2,
-		color: AppColors.textSecondary,
-		textAlign: 'center'
-	},
-
 	header: {
 		flex:1,
 		borderColor: AppColors.listItemBackground,
@@ -163,6 +153,14 @@ const styles = StyleSheet.create({
 		paddingLeft: 20,
 		paddingRight: 8,
 		paddingVertical: 8
+	},
+
+	iconBig: {
+		width: 18,
+		fontSize: 14,
+		marginTop: 2,
+		color: AppColors.textSecondary,
+		textAlign: 'center'
 	},
 
 	contentText: {
