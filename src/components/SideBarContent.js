@@ -147,6 +147,7 @@ const styles = StyleSheet.create({
 	}
 });
 
+
 SideBarContent.contextTypes = contextTypes;
 
 export default SideBarContent;
