@@ -7,6 +7,7 @@ import {changeBranch} from '../actions';
 import {Actions} from 'react-native-router-flux';
 import SearchBar from 'react-native-searchbar'
 
+// Checking Branch List
 class BranchList extends Component {
 
 	constructor(props) {
@@ -132,9 +133,7 @@ const styles = StyleSheet.create({
 
 	branchContainer: {
 		flex: 1,
-	},
-
-	
+	},	
 
 });
 
