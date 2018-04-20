@@ -368,7 +368,9 @@ const styles = StyleSheet.create({
 	commonText: {
 		color: AppColors.textSecondary,
 		marginVertical: 2
-	},newsContainer: {
+	},
+	
+	newsContainer: {
 		borderColor: AppColors.listItemBackground,
 		borderBottomWidth: 1
 	},
@@ -383,11 +385,11 @@ const styles = StyleSheet.create({
 		fontSize: 12
 	},
 
-  rightButton: {
-    fontSize: 22,
-    color: 'white',
+	rightButton: {
+	    	fontSize: 22,
+	    	color: 'white',
 		marginRight: 10,
-  },
+	},
 });
 
 const mapStateToProps = (state) => {
