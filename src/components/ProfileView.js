@@ -973,8 +973,6 @@ class ProfileView extends Component
         )
     }
 
-
-
     renderLogoutButton()
     {
         return (
@@ -1117,12 +1115,7 @@ const styles = StyleSheet.create({
         marginHorizontal: 20,
         marginBottom: 16,
     },
-    dropdownText: {
-        fontSize: 14,
-        fontWeight: 'bold',
-        textAlign: 'center',
-        color: 'white'
-    },
+
     dropdownRow: {
         flexDirection: 'row',
         height: 40,
@@ -1146,7 +1139,13 @@ const styles = StyleSheet.create({
         height: 124
     },
 
-    
+    dropdownText: {
+        fontSize: 14,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        color: 'white'
+    }
+        
 });
 
 const mapStateToProps = (state) =>
