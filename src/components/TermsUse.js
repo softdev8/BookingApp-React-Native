@@ -21,9 +21,11 @@ const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		padding: 8
+	},
+	textstyle: {
+		color: "#4B6CDF",
+		fontsize: 12
 	}
-
-
 });
 
 const mapStateToProps = (state) => {
