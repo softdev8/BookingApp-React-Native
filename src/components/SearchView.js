@@ -84,7 +84,6 @@ class SearchView extends Component {
 						}, 100);
 					} else {
 						// handle error
-						console.log("=================Search FAILED=================");
 						console.log(thrown);
             if (thrown.response.status === AppErrors.AUTH_FAILED) {
               Actions.auth({ redirect: 'searchView' });
