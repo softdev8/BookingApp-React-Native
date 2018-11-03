@@ -119,6 +119,15 @@ export default class ModalDropdown extends Component {
     }
   }
 
+  _updateLocation(callback) {
+    if (this._button && this._button.measure) {
+      this._button.measure((fx, fy, width, height, px, py) => {
+        this._buttonFrame = {x: px, y: py, w: width, h: height};
+        callback && callback();
+      });
+    }
+  }
+
   show() {
     this._updatePosition(() => {
       this.setState({
