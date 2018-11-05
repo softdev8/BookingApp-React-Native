@@ -1,0 +1,4 @@
+#Mon Nov 05 09:03:41 EST 2018
+base.0=G\:\\React\\BookingApp-React-Native\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
