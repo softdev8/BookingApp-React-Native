@@ -23,6 +23,7 @@
     <string msgid="9115728400623041681" name="common_google_play_services_install_button">"نصب"</string>
     <string msgid="8179894293032530091" name="common_google_play_services_install_text">"‏<ns1:g id="APP_NAME">%1$s</ns1:g> بدون خدمات Google Play که در دستگاه شما وجود ندارد اجرا نمی‌شود."</string>
     <string msgid="7442193194585196676" name="common_google_play_services_install_title">"‏دریافت سرویس‌های Google Play"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"‏قابلیت دسترسی خدمات Google Play"</string>
     <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"‏خطا در خدمات Google Play"</string>
     <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"‏<ns1:g id="APP_NAME">%1$s</ns1:g> برای استفاده از خدمات Google Play با مشکل روبرو است. لطفاً دوباره امتحان کنید."</string>
     <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"‏<ns1:g id="APP_NAME">%1$s</ns1:g> بدون خدمات Google Play که در دستگاه شما پشتیبانی نمی‌شود، اجرا نخواهد شد."</string>
@@ -34,5 +35,6 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"باز کردن در تلفن"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"ورود به سیستم"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"‏ورود به سیستم با Google‎"</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"موارد دیگر"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"۹۹۹+"</string>
 </resources>
