@@ -42,8 +42,8 @@ It then generates the keystore as a file called 'kidney-key.keystore'.
 - Edit the file android/gradle.properties and add the following:
 
 ```sh 
-MYAPP_RELEASE_STORE_FILE=my-release-key.keystore
-MYAPP_RELEASE_KEY_ALIAS=my-release-alias
+MYAPP_RELEASE_STORE_FILE=******.keystore or ******.jks (keystore name)
+MYAPP_RELEASE_KEY_ALIAS=******
 MYAPP_RELEASE_STORE_PASSWORD=******
 MYAPP_RELEASE_KEY_PASSWORD=******
 ```
