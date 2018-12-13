@@ -91,3 +91,32 @@ The generated APK can be found under android/app/build/outputs/apk/app-release.a
 https://facebook.github.io/react-native/docs/signed-apk-android.html
 
 ###
+
+### Change Package Name
+I've changed project' subfolder name from: "android/app/src/main/java/MY/APP/OLD_ID/" to: "android/app/src/main/java/MY/APP/NEW_ID/"
+
+Then manually switched the old and new package ids:
+
+In: android/app/src/main/java/MY/APP/NEW_ID/MainActivity.java:
+
+package MY.APP.NEW_ID;
+In android/app/src/main/java/MY/APP/NEW_ID/MainApplication.java:
+
+package MY.APP.NEW_ID;
+In android/app/src/main/AndroidManifest.xml:
+
+package="MY.APP.NEW_ID"
+And in android/app/build.gradle:
+
+applicationId "MY.APP.NEW_ID"
+(Optional) In android/app/BUCK:
+
+android_build_config(
+  package="MY.APP.NEW_ID"
+)
+android_resource(
+  package="MY.APP.NEW_ID"
+)
+Gradle' cleaning in the end (in /android folder):
+
+./gradlew clean
