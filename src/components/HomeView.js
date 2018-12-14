@@ -1,5 +1,3 @@
-
-
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { View, Text, StyleSheet, TouchableOpacity, Linking, ScrollView } from 'react-native';
@@ -17,43 +15,26 @@ import FCM from 'react-native-fcm';
 
 
 class HomeView extends Component
-
 {
-
     constructor(props)
     {
         super(props);
-
-
-
         this.state = {
             loading: false,
             unreadNews: 0,
             unreadNewReleases: 0,
             sourceSceneKey: '',
         };
-
-
-
         this.handleFacebookPress = this.handleFacebookPress.bind(this);
         this.handleTwitterPress = this.handleTwitterPress.bind(this);
     }
-
-
-
-
     componentDidMount()
     {
          this.retrieveProfile();         
     }
-
-
-
     componentWillReceiveProps(nextProps)
     {
         const { sourceSceneKey } = nextProps;
-
-       
         if (sourceSceneKey !== '')
         {
             if (this.state.sourceSceneKey !== sourceSceneKey)
@@ -67,7 +48,6 @@ class HomeView extends Component
             }
         }
     }
-
 
     retrieveStaticContent()
     {
