@@ -120,3 +120,14 @@ android_resource(
 Gradle' cleaning in the end (in /android folder):
 
 ./gradlew clean
+
+## Unable to load script from assets ...
+atest React-Native Cli fallow below Command in mac terminal run on android device
+### step1: 
+If not than (in project directory) 
+`mkdir android/app/src/main/assets`
+
+### step2: 
+`react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+step3: react-native run-android`
+
