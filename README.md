@@ -1,7 +1,5 @@
 # Booking Delivery-ReactNative
 
-this is guideline for build and run Bargain app from scratch
-
 ## Prerequirements
 
 ```sh
