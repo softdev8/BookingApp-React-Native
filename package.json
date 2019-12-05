@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "apsl-react-native-button": "^3.0.2",
-    "axios": "^0.16.2",
+    "axios": "0.19.0",
     "crossroads": "^0.12.2",
     "email-validator": "^1.0.7",
     "moment": "^2.18.1",
